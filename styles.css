@@ -68,3 +68,7 @@ h1, h2 {
         padding: 6px 10px;
     }
 }
+
+.result-section {
+    margin-top: 20px; /* 결과 섹션 상단 여백 추가 */
+}
