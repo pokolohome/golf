@@ -14,8 +14,9 @@ body, html {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    width: 100%; /* 모바일 최적화를 위해 가로 폭을 100%로 설정 */
-    max-width: 300px; /* 최대 폭 설정 */
+    width: 100%;
+    max-width: 100%; /* 최대 폭을 100%로 설정하여 화면을 꽉 채움 */
+    box-sizing: border-box; /* 패딩을 포함한 너비 계산 */
 }
 
 .input-section, .result-section {
