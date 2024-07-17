@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator">
+    <h1>간단 계산기</h1>
+    <div class="input-section">
+        <label for="inputA">A 값 선택:</label>
+        <div id="buttonsA" class="button-group">
+            <!-- A의 값을 선택하는 버튼들 -->
+            <button onclick="setValue('A', 1.5)">1.5</button>
+            <button onclick="setValue('A', 2)">2</button>
+            <button onclick="setValue('A', 3)">3</button>
+            <button onclick="setValue('A', 4)">4</button>
+            <button onclick="setValue('A', 5)">5</button>
+            <button onclick="setValue('A', 6)">6</button>
+            <button onclick="setValue('A', 7)">7</button>
+            <button onclick="setValue('A', 8)">8</button>
+            <button onclick="setValue('A', 9)">9</button>
+            <button onclick="setValue('A', 10)">10</button>
+            <button onclick="setValue('A', 15)">15</button>
+            <button onclick="setValue('A', 20)">20</button>
+        </div>
+        <p>선택된 A 값: <span id="displayA">없음</span></p>
+        <label for="inputB">B 값 선택:</label>
+        <div id="buttonsB" class="button-group">
+            <!-- B의 값을 선택하는 버튼들 -->
+            <button onclick="setValue('B', 0.5)">0.5</button>
+            <button onclick="setValue('B', 1)">1</button>
+            <button onclick="setValue('B', 1.5)">1.5</button>
+            <button onclick="setValue('B', 2)">2</button>
+            <button onclick="setValue('B', 2.5)">2.5</button>
+            <button onclick="setValue('B', 3)">3</button>
+            <button onclick="setValue('B', 4)">4</button>
+            <button onclick="setValue('B', 5)">5</button>
+            <button onclick="setValue('B', 6)">6</button>
+            <button onclick="setValue('B', 9)">9</button>
+            <!-- 추가된 버튼 -->
+        </div>
+        <p>선택된 B 값: <span id="displayB">없음</span></p>
+    </div>
+    <button onclick="calculate()">계산하기</button>
+    <div class="result-section">
+        <h2>결과: <span id="result">0</span></h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
