@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.input-section, .result-section {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.button-group button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #555; /* 진한 회색으로 변경 */
+    color: white; /* 버튼 내 텍스트 색상을 흰색으로 설정 */
+    border: 1px solid #333; /* 테두리를 조금 더 진하게 */
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #666; /* 마우스 호버 시 색상을 약간 밝게 */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+h2 {
+    color: #666;
+    font-size: 20px;
+}
