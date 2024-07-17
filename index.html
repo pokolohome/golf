@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퍼팅 계산기</title>
+    <title>간단한 계산기</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="calculator">
-    <h1>퍼팅 계산기</h1>
+    <h1>간단 계산기</h1>
     <div class="input-section">
-        <label>A 값 선택:</label>
         <div class="button-group">
             <button onclick="setValue('A', 1.5)">1.5</button>
             <button onclick="setValue('A', 2)">2</button>
@@ -24,11 +23,9 @@
             <button onclick="setValue('A', 10)">10</button>
             <button onclick="setValue('A', 15)">15</button>
             <button onclick="setValue('A', 20)">20</button>
-        </div>
             <!-- 추가 버튼 생략 -->
         </div>
         <p>선택된 A 값: <span id="displayA">없음</span></p>
-        <label>B 값 선택:</label>
         <div class="button-group">
             <button onclick="setValue('B', 0.5)">0.5</button>
             <button onclick="setValue('B', 1)">1</button>
@@ -40,12 +37,11 @@
             <button onclick="setValue('B', 5)">5</button>
             <button onclick="setValue('B', 6)">6</button>
             <button onclick="setValue('B', 9)">9</button>
+            <!-- 추가 버튼 생략 -->
         </div>
         <p>선택된 B 값: <span id="displayB">없음</span></p>
     </div>
-    <p></p>
-    
-    <button onclick="calculate()">계산하기</button>
+    <button onclick="calculate()">계산하기</button> <!-- 버튼 위치 변경 -->
     <div class="result-section">
         <h2>결과: <span id="result">0</span></h2>
     </div>
@@ -53,3 +49,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
