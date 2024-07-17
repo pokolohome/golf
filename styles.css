@@ -14,32 +14,29 @@ body, html {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    width: 300px;
+    width: 100%; /* 모바일 최적화를 위해 가로 폭을 100%로 설정 */
+    max-width: 300px; /* 최대 폭 설정 */
 }
 
 .input-section, .result-section {
     margin-bottom: 20px;
 }
 
-input[type="number"] {
-    padding: 8px;
-    margin: 0 10px 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100px;
+input[type="number"], .button-group button {
+    width: 100%; /* 버튼과 입력 필드를 전체 폭으로 확장 */
+    padding: 10px;
+    margin: 5px 0; /* 모바일에서의 간격 조정 */
 }
 
 .button-group button {
-    padding: 5px 10px;
-    margin: 5px;
-    background-color: #555; /* 진한 회색으로 변경 */
-    color: white; /* 버튼 내 텍스트 색상을 흰색으로 설정 */
-    border: 1px solid #333; /* 테두리를 조금 더 진하게 */
+    background-color: #555;
+    color: white;
+    border: 1px solid #333;
     cursor: pointer;
 }
 
 .button-group button:hover {
-    background-color: #666; /* 마우스 호버 시 색상을 약간 밝게 */
+    background-color: #666;
 }
 
 button {
@@ -57,11 +54,29 @@ button:hover {
 }
 
 h1 {
-    margin: 0 0 15px 0;
-    color: #333;
+    margin: 10px 0; /* 모바일에서의 제목 여백 조정 */
+    font-size: 1.5rem; /* 폰트 크기 조정 */
 }
 
 h2 {
     color: #666;
-    font-size: 20px;
+    font-size: 1.2rem; /* 결과 폰트 크기 조정 */
+}
+
+@media (min-width: 601px) {
+    .calculator {
+        width: 300px; /* 데스크톱에선 원래 크기로 복원 */
+    }
+
+    input[type="number"], .button-group button {
+        width: auto; /* 데스크톱에서는 원래 크기로 복원 */
+    }
+
+    h1 {
+        font-size: 2rem; /* 데스크톱에서의 제목 폰트 크기 */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* 데스크톱에서의 결과 폰트 크기 */
+    }
 }
